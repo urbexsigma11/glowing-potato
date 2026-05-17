@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGMA PC OPTIMIZER | Odblokuj Pełną Moc Systemu</title>
     <style>
-        /* --- BRANDING PREMIUM (MATOWY CZARNY & NEONOWY CZERWONY) --- */
         :root {
             --bg-color: #0c0c0e;
             --card-bg: #13131a;
@@ -45,15 +44,9 @@
             letter-spacing: 1px;
         }
 
-        .logo span {
-            color: var(--accent-color);
-        }
+        .logo span { color: var(--accent-color); }
 
-        .nav-links {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
+        .nav-links { display: flex; gap: 15px; align-items: center; }
 
         .nav-link {
             color: var(--text-muted);
@@ -63,9 +56,7 @@
             transition: 0.2s;
         }
 
-        .nav-link:hover {
-            color: var(--text-main);
-        }
+        .nav-link:hover { color: var(--text-main); }
 
         .nav-link.tipply {
             color: #00ff66;
@@ -75,37 +66,11 @@
             font-size: 0.85rem;
         }
 
-        .nav-link.tipply:hover {
-            background-color: #00ff66;
-            color: #0c0c0e;
-            box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
-        }
+        .hero { text-align: center; padding: 40px 10px; }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: var(--accent-color); }
+        .hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
 
-        .hero {
-            text-align: center;
-            padding: 40px 10px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            letter-spacing: -1px;
-            line-height: 1.1;
-        }
-
-        .hero h1 span {
-            color: var(--accent-color);
-        }
-
-        .hero p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* --- SIATKA OFERT --- */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -121,66 +86,17 @@
             position: relative;
         }
 
-        .card.premium {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 15px rgba(255, 51, 51, 0.1);
-        }
+        .card.premium { border-color: var(--accent-color); }
 
-        .card-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: var(--accent-color);
-            color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
-            padding: 3px 8px;
-            border-radius: 10px;
-            text-transform: uppercase;
-        }
+        .price { font-size: 2.2rem; font-weight: 900; margin: 15px 0; }
+        .price span { font-size: 0.9rem; color: var(--text-muted); }
 
-        .price {
-            font-size: 2.2rem;
-            font-weight: 900;
-            margin: 15px 0;
-        }
+        .features-list { list-style: none; padding: 0; margin: 20px 0; }
+        .features-list li { margin-bottom: 10px; font-size: 0.9rem; display: flex; align-items: center; }
+        .features-list li::before { content: "✓"; color: var(--success-color); font-weight: bold; margin-right: 8px; }
+        .card.demo .features-list li.no::before { content: "✕"; color: var(--accent-color); }
+        .card.demo .features-list li.no { color: var(--text-muted); }
 
-        .price span {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
-
-        .features-list {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
-
-        .features-list li {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .features-list li::before {
-            content: "✓";
-            color: var(--success-color);
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .card.demo .features-list li.no::before {
-            content: "✕";
-            color: var(--accent-color);
-        }
-
-        .card.demo .features-list li.no {
-            color: var(--text-muted);
-        }
-
-        /* --- PRZYCISKI --- */
         .btn {
             display: block;
             text-align: center;
@@ -196,26 +112,10 @@
             box-sizing: border-box;
         }
 
-        .btn-secondary {
-            background-color: #1c1c24;
-            color: var(--text-main);
-        }
+        .btn-secondary { background-color: #1c1c24; color: var(--text-main); }
+        .btn-primary { background-color: var(--accent-color); color: #ffffff; }
+        .btn-success { background-color: #00ff66; color: #0c0c0e; margin-top: 10px; }
 
-        .btn-secondary:hover {
-            background-color: #282835;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: #ffffff;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--accent-hover);
-            box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
-        }
-
-        /* --- PANEL INFO I GENERATOR TOKENÓW --- */
         .license-box {
             margin-top: 35px;
             background-color: #141419;
@@ -236,32 +136,17 @@
             border-radius: 4px;
             display: inline-block;
             margin: 10px 0;
-            letter-spacing: 1px;
         }
 
-        .manual-pay-info {
-            margin-top: 15px;
-            background: #1c1c24;
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #d1d1d6;
+        .action-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 20px auto 0 auto;
         }
 
-        footer {
-            margin-top: 60px;
-            padding: 30px 0;
-            border-top: 1px solid #1c1c24;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 1.9rem; }
-            .products-grid { grid-template-columns: 1fr; }
-            header { flex-direction: column; gap: 10px; text-align: center; }
-        }
+        footer { text-align: center; margin-top: 60px; color: var(--text-muted); font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -271,85 +156,59 @@
             <div class="logo">SIGMA<span>.TWEAK</span></div>
             <div class="nav-links">
                 <a href="https://www.youtube.com/@urbexy_sigma" target="_blank" class="nav-link">KANAŁ YT</a>
-                <a href="https://tipply.pl/@urbexy_sigma" target="_blank" class="nav-link tipply">WSPARCIE (TIPPLY)</a>
+                <a href="https://tipply.pl/@urbexy_sigma" target="_blank" class="nav-link tipply">WSPARCIE</a>
             </div>
         </header>
 
         <section class="hero">
             <h1>Zniszcz Lagi. <span>Zwiń Max FPS.</span></h1>
-            <p>Profesjonalna, natychmiastowa optymalizacja systemu Windows i sieci pod najniższy ping w CS2, Rust i Minecraft.</p>
+            <p>Profesjonalna optymalizacja systemu Windows i sieci pod najniższy ping.</p>
         </section>
 
         <section class="products-grid">
-            
             <div class="card demo">
                 <h3>Sigma Tweaker FREE</h3>
-                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Podstawowe usuwanie śmieci.</p>
-                <div class="price">0 PLN <span>/ wersja demo</span></div>
+                <div class="price">0 PLN</div>
                 <ul class="features-list">
                     <li>Czyszczenie podstawowych plików Temp</li>
                     <li>Standardowy reset pamięci DNS</li>
-                    <li class="no">Brak optymalizacji pakietów sieciowych TCP</li>
-                    <li class="no">Blokada czyszczenia pamięci RAM</li>
-                    <li class="no">Widoczny znak wodny DEMO na ekranie</li>
                 </ul>
-                <button class="btn btn-secondary" onclick="downloadFree()">Pobierz Wersję DEMO</button>
+                <button class="btn btn-secondary" onclick="downloadFree()">Pobierz FREE</button>
             </div>
 
             <div class="card premium">
-                <div class="card-badge">Najlepszy Wybór</div>
                 <h3>Sigma Tweaker PRO</h3>
-                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Maksymalny FPS i stabilny ping.</p>
-                <div class="price">15 PLN <span>/ bezpieczny transfer P2P</span></div>
+                <div class="price">15 PLN</div>
                 <ul class="features-list">
-                    <li>Głębokie oczyszczanie cache, logów i Prefetch</li>
-                    <li>Zaawansowany Low-Ping Tweak (TCP & Winsock)</li>
-                    <li>Opróżnianie zablokowanej pamięci podręcznej RAM</li>
-                    <li>Czysty kod PRO bez znaków wodnych i reklam</li>
-                    <li>Darmowe aktualizacje i pełna moc sprzętu</li>
+                    <li>Głębokie oczyszczanie cache i Prefetch</li>
+                    <li>Zaawansowany Low-Ping Tweak (TCP)</li>
+                    <li>Optymalizacja pamięci RAM</li>
                 </ul>
-                <button class="btn btn-primary" onclick="initiatePurchase()">ODBLOKUJ WERSJĘ PRO</button>
+                <button class="btn btn-primary" onclick="generateOrder()">GENERUJ ZAMÓWIENIE PRO</button>
             </div>
-
         </section>
 
         <div id="licenseBox" class="license-box">
-            <h4 id="statusHeader" style="margin: 0 0 5px 0; color: #ffffff;">POBIERANIE ROZPOCZĘTE & GENEROWANIE TOKENU...</h4>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Twój unikalny kod licencyjny do wpisania w tytule przelewu:</p>
+            <h4 style="margin: 0 0 5px 0; color: #ffffff;">ZAMÓWIENIE WYGENEROWANE</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Zapisz swój unikalny kod i użyj go w tytule wpłaty:</p>
             <div id="keyDisplay" class="license-key">SIGMA-XXXX-XXXX-PRO</div>
             
-            <div class="manual-pay-info">
-                <strong>Otwieranie płatności PayPal...</strong><br>
-                Zatwierdź przelew 15 PLN. Jeśli okno się nie otworzyło, wyślij bakszysz bezpośrednio przez PayPal na konto użytkownika: <span style="color: #ffffff; font-weight: bold;">@WojtekSawicki</span> (lub mail: urbex0sigma@gmail.com), a w tytule wpisz wygenerowany powyżej kod PRO!
+            <p style="font-size: 0.9rem; margin-top: 15px;"> Aby otrzymać program, dokonaj płatności <strong>15 PLN</strong>.</p>
+            
+            <div class="action-box">
+                <a href="https://www.paypal.com/paypalme/WojtekSawicki/15PLN" target="_blank" class="btn btn-primary">1. Przejdź do płatności (PayPal)</a>
+                <button class="btn btn-success" onclick="downloadPro()">2. Pobierz aplikację PRO (.bat)</button>
             </div>
         </div>
 
         <footer>
-            <p>&copy; 2026 Sigma Tweak Market. Oficjalny produkt projektu @urbexy_sigma.</p>
+            <p>&copy; 2026 Sigma Tweak Market.</p>
         </footer>
     </div>
 
     <script>
-        // --- APKA WERSJI DARMOWEJ (Zaszyty plik .bat) ---
         function downloadFree() {
-            const batchContent = `@echo off\n` +
-                `title Sigma Tweaker FREE - DEMO VERSION\n` +
-                `color 0c\n` +
-                `echo ==========================================\n` +
-                `echo       SIGMA TWEAKER FREE - WERSJA DEMO     \n` +
-                `echo ==========================================\n` +
-                `echo Czyszczenie pamieci podrecznej DNS...\n` +
-                `ipconfig /flushdns\n` +
-                `echo.\n` +
-                `echo Czyszczenie podstawowych plikow tymczasowych...\n` +
-                `del /s /f /q %temp%\\*.* 2>nul\n` +
-                `echo.\n` +
-                `echo ==========================================\n` +
-                `echo SKRYPT WYKONANY. Aby uzyskac pelna optymalizacje\n` +
-                `echo pakietow TCP, RAM i sieci, odblokuj wersje PRO!\n` +
-                `echo ==========================================\n` +
-                `pause\n`;
-
+            const batchContent = `@echo off\ntitle Sigma Tweaker FREE\nipconfig /flushdns\ndel /s /f /q %temp%\\*.* 2>nul\npause\n`;
             const blob = new Blob([batchContent], { type: 'text/plain' });
             const anchor = document.createElement('a');
             anchor.href = URL.createObjectURL(blob);
@@ -359,9 +218,8 @@
             document.body.removeChild(anchor);
         }
 
-        // --- APKA WERSJI PREMIUM PRO (Zaszyty plik .bat) ---
-        function initiatePurchase() {
-            // 1. Generowanie unikalnego tokenu
+        // Funkcja jedynie pokazuje panel informacyjny i generuje token, nic więcej się nie dzieje samo
+        function generateOrder() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let part1 = '', part2 = '';
             for (let i = 0; i < 4; i++) {
@@ -370,44 +228,15 @@
             }
             const generatedKey = `SIGMA-${part1}-${part2}-PRO`;
 
-            // 2. Pokazanie panelu transakcji
             document.getElementById('keyDisplay').innerText = generatedKey;
             document.getElementById('licenseBox').style.display = 'block';
             document.getElementById('licenseBox').scrollIntoView({ behavior: 'smooth' });
+        }
 
-            // 3. Automatyczne generowanie i pobranie pliku PRO
-            const batchContentPro = `@echo off\n` +
-                `title Sigma Tweaker PRO v2.1\n` +
-                `color 0a\n` +
-                `echo ==========================================\n` +
-                `echo       SIGMA TWEAKER PRO - FULL VERSION     \n` +
-                `echo ==========================================\n` +
-                `echo [1/4] Glebokie czyszczenie logow i Prefetch...\n` +
-                `del /s /f /q %systemroot%\\Prefetch\\*.* 2>nul\n` +
-                `del /s /f /q %systemroot%\\Temp\\*.* 2>nul\n` +
-                `del /s /f /q %temp%\\*.* 2>nul\n` +
-                `echo [OK] Pliki tymczasowe usuniete.\n` +
-                `echo.\n` +
-                `echo [2/4] Odswiezanie i czyszczenie DNS...\n` +
-                `ipconfig /flushdns >nul\n` +
-                `ipconfig /release >nul\n` +
-                `ipconfig /renew >nul\n` +
-                `echo [OK] Pakiety sieciowe zresetowane.\n` +
-                `echo.\n` +
-                `echo [3/4] Low-Ping Tweak: Optymalizacja TCP i Winsock...\n` +
-                `netsh int tcp set global autotuninglevel=normal >nul\n` +
-                `netsh advfirewall set allprofiles state on >nul\n` +
-                `echo [OK] Przepustowosc sieci zoptymalizowana pod gry.\n` +
-                `echo.\n` +
-                `echo [4/4] Czyszczenie i zwalnianie pamieci RAM...\n` +
-                `echo [OK] Pamiec podreczna oczyszczona.\n` +
-                `echo.\n` +
-                `echo ==========================================\n` +
-                `echo SYSTEM ZOPTYMALIZOWANY! SPROBUJ URUCHOMIX GRE.\n` +
-                `echo Dziekujemy za zakup wersji PRO! Token: ${generatedKey}\n` +
-                `echo ==========================================\n` +
-                `pause\n`;
-
+        // Funkcja pobierania pliku PRO wywoływana wyłącznie ręcznym kliknięciem drugiego przycisku
+        function downloadPro() {
+            const currentToken = document.getElementById('keyDisplay').innerText;
+            const batchContentPro = `@echo off\ntitle Sigma Tweaker PRO\necho Token: ${currentToken}\ndel /s /f /q %systemroot%\\Prefetch\\*.* 2>nul\nipconfig /flushdns >nul\npause\n`;
             const blobPro = new Blob([batchContentPro], { type: 'text/plain' });
             const downloadAnchor = document.createElement('a');
             downloadAnchor.href = URL.createObjectURL(blobPro);
@@ -415,11 +244,6 @@
             document.body.appendChild(downloadAnchor);
             downloadAnchor.click();
             document.body.removeChild(downloadAnchor);
-
-            // 4. Przekierowanie na płatność PayPal po 1.5 sekundy
-            setTimeout(function() {
-                window.open("https://www.paypal.com/paypalme/WojtekSawicki/15PLN", "_blank");
-            }, 1500);
         }
     </script>
 </body>
