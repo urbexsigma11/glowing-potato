@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigma Digital Market | Premium PC Optimization</title>
+    <title>SIGMA PC OPTIMIZER | Odblokuj Pełną Moc Systemu</title>
     <style>
-        /* --- GLOBALNE STYLOWANIE (LUKSUSOWY MAT & CYBERPUNK) --- */
+        /* --- BRANDING PREMIUM (MATOWY CZARNY & NEONOWY CZERWONY) --- */
         :root {
             --bg-color: #0c0c0e;
             --card-bg: #13131a;
@@ -19,63 +19,47 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
+            line-height: 1.5;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
 
-        /* --- NAWIGACJA (STYL ELEGANCKI) --- */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
             border-bottom: 1px solid #1c1c24;
         }
 
         .logo {
-            font-size: 1.3rem;
-            font-weight: 800;
+            font-size: 1.4rem;
+            font-weight: 900;
             letter-spacing: 1px;
-            color: var(--text-main);
         }
 
         .logo span {
             color: var(--accent-color);
         }
 
-        .nav-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        /* --- SEKCJA GŁÓWNA (HERO) --- */
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 40px 10px;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             letter-spacing: -1px;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
         .hero h1 span {
@@ -84,37 +68,30 @@
 
         .hero p {
             color: var(--text-muted);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             max-width: 600px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto;
         }
 
-        /* --- SIATKA PRODUKTÓW (PRO VS DEMO) --- */
+        /* --- SIATKA OFERT (DRUZGOCĄCA PRZEWAGA PRO) --- */
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
         }
 
         .card {
             background-color: var(--card-bg);
             border: 1px solid #22222b;
-            border-radius: 12px;
-            padding: 30px;
-            text-align: left;
+            border-radius: 10px;
+            padding: 25px;
             position: relative;
-            overflow: hidden;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #333344;
         }
 
         .card.premium {
             border-color: var(--accent-color);
+            box-shadow: 0 0 15px rgba(255, 51, 51, 0.1);
         }
 
         .card-badge {
@@ -123,27 +100,21 @@
             right: 15px;
             background-color: var(--accent-color);
             color: white;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: bold;
-            padding: 4px 10px;
-            border-radius: 20px;
+            padding: 3px 8px;
+            border-radius: 10px;
             text-transform: uppercase;
         }
 
-        .card h3 {
-            font-size: 1.5rem;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
         .price {
-            font-size: 2rem;
-            font-weight: 800;
-            margin: 20px 0;
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin: 15px 0;
         }
 
         .price span {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: var(--text-muted);
             font-weight: 400;
         }
@@ -151,13 +122,12 @@
         .features-list {
             list-style: none;
             padding: 0;
-            margin: 20px 0 30px 0;
+            margin: 20px 0;
         }
 
         .features-list li {
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-            color: #d1d1d6;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
         }
@@ -166,7 +136,7 @@
             content: "✓";
             color: var(--success-color);
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 8px;
         }
 
         .card.demo .features-list li.no::before {
@@ -178,16 +148,16 @@
             color: var(--text-muted);
         }
 
-        /* --- PRZYCISKI --- */
+        /* --- POTĘŻNE PRZYCISKI DZIAŁANIA --- */
         .btn {
             display: block;
             text-align: center;
-            padding: 14px 20px;
+            padding: 14px;
             border-radius: 6px;
             font-weight: bold;
             text-decoration: none;
             font-size: 1rem;
-            transition: 0.3s;
+            transition: 0.2s;
             cursor: pointer;
             border: none;
             width: 100%;
@@ -195,12 +165,12 @@
         }
 
         .btn-secondary {
-            background-color: #22222b;
+            background-color: #1c1c24;
             color: var(--text-main);
         }
 
         .btn-secondary:hover {
-            background-color: #333344;
+            background-color: #282835;
         }
 
         .btn-primary {
@@ -210,14 +180,14 @@
 
         .btn-primary:hover {
             background-color: var(--accent-hover);
-            box-shadow: 0 0 15px rgba(255, 51, 51, 0.3);
+            box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
         }
 
-        /* --- LIVE GENERATOR KLUCZY --- */
+        /* --- PANEL INSTRUKCJI I ZABEZPIECZENIA PŁATNOŚCI --- */
         .license-box {
-            margin-top: 50px;
+            margin-top: 35px;
             background-color: #141419;
-            border: 1px dashed #333344;
+            border: 1px dashed var(--accent-color);
             border-radius: 8px;
             padding: 20px;
             text-align: center;
@@ -226,30 +196,37 @@
 
         .license-key {
             font-family: 'Consolas', monospace;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: var(--success-color);
             font-weight: bold;
             background: #0c0c0e;
-            padding: 10px;
+            padding: 8px;
             border-radius: 4px;
             display: inline-block;
             margin: 10px 0;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
-        /* --- STOPKA --- */
+        .manual-pay-info {
+            margin-top: 15px;
+            background: #1c1c24;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #d1d1d6;
+        }
+
         footer {
-            margin-top: 80px;
-            padding: 40px 0;
+            margin-top: 60px;
+            padding: 30px 0;
             border-top: 1px solid #1c1c24;
             text-align: center;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
-        /* Responsywność na telefony */
         @media (max-width: 600px) {
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 1.9rem; }
             .products-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -258,67 +235,70 @@
 
     <div class="container">
         <header>
-            <div class="logo">SIGMA<span>.MARKET</span></div>
+            <div class="logo">SIGMA<span>.TWEAK</span></div>
             <div class="nav-links">
-                <a href="https://www.youtube.com/@urbexy_sigma" target="_blank">YouTube</a>
-                <a href="#sklep">Produkty</a>
+                <a href="https://www.youtube.com/@urbexy_sigma" target="_blank" style="color: var(--text-muted); text-decoration: none; font-weight: bold;">KANAŁ YT</a>
             </div>
         </header>
 
         <section class="hero">
-            <h1>Maksymalne FPS. <span>Zero Lagów.</span></h1>
-            <p>Zoptymalizuj swój system Windows pod najwyższe osiągi w grach sieciowych za pomocą jednego kliknięcia.</p>
+            <h1>Zniszcz Lagi. <span>Zwiń Max FPS.</span></h1>
+            <p>Profesjonalna, natychmiastowa optymalizacja systemu Windows i sieci pod najniższy ping w CS2, Rust i Minecraft.</p>
         </section>
 
-        <section id="sklep" class="products-grid">
+        <section class="products-grid">
             
             <div class="card demo">
-                <h3>Sigma Optimizer Free</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">Podstawowe czyszczenie systemu.</p>
-                <div class="price">0 PLN <span>/ darmowy</span></div>
+                <h3>Sigma Tweaker FREE</h3>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Podstawowe usuwanie śmieci.</p>
+                <div class="price">0 PLN <span>/ wersja demo</span></div>
                 <ul class="features-list">
                     <li>Czyszczenie podstawowych plików Temp</li>
-                    <li>Podstawowy restart pamięci DNS</li>
-                    <li class="no">Brak optymalizacji protokołu TCP</li>
-                    <li class="no">Widoczny znak wodny wersji DEMO</li>
+                    <li>Standardowy reset pamięci DNS</li>
+                    <li class="no">Brak optymalizacji pakietów sieciowych TCP</li>
+                    <li class="no">Blokada czyszczenia pamięci RAM</li>
+                    <li class="no">Widoczny znak wodny DEMO na ekranie</li>
                 </ul>
-                <a href="TUTAJ_LINK_DO_WERSJI_DEMO" class="btn btn-secondary" target="_blank">Pobierz wersję DEMO</a>
+                <a href="TUTAJ_LINK_DO_WERSJI_DEMO" class="btn btn-secondary" target="_blank">Pobierz Wersję DEMO</a>
             </div>
 
             <div class="card premium">
-                <div class="card-badge">Polecane</div>
-                <h3>Sigma Optimizer PRO</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">Pełna optymalizacja i najniższy ping.</p>
-                <div class="price">15 PLN <span>/ jednorazowo</span></div>
+                <div class="card-badge">Najlepszy Wybór</div>
+                <h3>Sigma Tweaker PRO</h3>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Maksymalny FPS i stabilny ping.</p>
+                <div class="price">15 PLN <span>/ bezpieczny transfer P2P</span></div>
                 <ul class="features-list">
-                    <li>Głębokie czyszczenie cache i Prefetch</li>
-                    <li>Zaawansowany Low-Ping Tweak (TCP/Winsock)</li>
-                    <li>Zwalnianie zablokowanej pamięci RAM</li>
-                    <li>Czysty interfejs bez reklam i bez limitów</li>
+                    <li>Głębokie oczyszczanie cache, logów i Prefetch</li>
+                    <li>Zaawansowany Low-Ping Tweak (TCP & Winsock)</li>
+                    <li>Oprożnianie zablokowanej pamięci podręcznej RAM</li>
+                    <li>Czysty kod PRO bez znaków wodnych i reklam</li>
+                    <li>Darmowe aktualizacje i pełna moc sprzętu</li>
                 </ul>
                 
-                <button class="btn btn-primary" onclick="initiatePurchase()">Kup wersję PRO (PayPal)</button>
+                <button class="btn btn-primary" onclick="initiatePurchase()">ODBLOKUJ WERSJĘ PRO</button>
             </div>
 
         </section>
 
         <div id="licenseBox" class="license-box">
-            <h4 style="margin: 0; color: #ffffff;">Twój unikalny token zamówienia:</h4>
-            <div id="keyDisplay" class="license-key">SIGMA-XXXX-XXXX-XXXX</div>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 5px 0 0 0;">
-                Zapisz ten token i podaj go w tytule płatności PayPal (donejt), aby aktywować pełną licencję systemu.
-            </p>
+            <h4 style="margin: 0 0 5px 0; color: #ffffff;">GENEROWANIE TOKENU ZAMÓWIENIA OK...</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Twój unikalny kod licencyjny do wpisania w tytule przelewu:</p>
+            <div id="keyDisplay" class="license-key">SIGMA-XXXX-XXXX-PRO</div>
+            
+            <div class="manual-pay-info">
+                <strong>Otwieranie płatności PayPal...</strong><br>
+                Jeśli okno się nie otworzyło, wyślij 15 PLN bezpośrednio na adres: <span style="color: #ffffff; font-weight: bold;">urbex0sigma@gmail.com</span>, a w tytule wiadomości wpisz wygenerowany powyżej kod PRO!
+            </div>
         </div>
 
         <footer>
-            <p>&copy; 2026 Sigma Digital Market. Oficjalne wsparcie deweloperskie marki @urbexy_sigma.</p>
-            <p style="font-size: 0.75rem; color: #44444f; margin-top: 5px;">Płatności obsługiwane bezpiecznie przez PayPal P2P.</p>
+            <p>&copy; 2026 Sigma Tweak Market. Oficjalny produkt projektu @urbexy_sigma.</p>
         </footer>
     </div>
 
     <script>
         function initiatePurchase() {
-            // 1. Generowanie losowego klucza licencji dla klienta
+            // 1. Generowanie błyskawicznego, unikalnego kodu dla klienta
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let part1 = '', part2 = '';
             for (let i = 0; i < 4; i++) {
@@ -327,16 +307,16 @@
             }
             const generatedKey = `SIGMA-${part1}-${part2}-PRO`;
 
-            // 2. Wyświetlenie okna z kluczem na stronie
+            // 2. Odsłonięcie sekcji informacyjnej
             document.getElementById('keyDisplay').innerText = generatedKey;
             document.getElementById('licenseBox').style.display = 'block';
             document.getElementById('licenseBox').scrollIntoView({ behavior: 'smooth' });
 
-            // 3. Automatyczne przekierowanie do Twojego PayPal z kwotą 15 PLN po 2.5 sekundach
+            // 3. Natychmiastowe otwarcie płatności na profil prywatny (nieblokowane przez przeglądarki mobilne)
             setTimeout(function() {
-                window.open("https://www.paypal.com/paypalme/urbex0sigma/15", "_blank");
-            }, 2500);
+                window.open("https://www.paypal.com/paypalme/urbex0sigma/15PLN", "_blank");
+            }, 1500);
         }
     </script>
 </body>
-</ht
+</html>
