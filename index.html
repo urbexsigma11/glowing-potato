@@ -49,6 +49,38 @@
             color: var(--accent-color);
         }
 
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--text-main);
+        }
+
+        .nav-link.tipply {
+            color: #00ff66;
+            border: 1px solid #00ff66;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .nav-link.tipply:hover {
+            background-color: #00ff66;
+            color: #0c0c0e;
+            box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+        }
+
         .hero {
             text-align: center;
             padding: 40px 10px;
@@ -228,6 +260,7 @@
         @media (max-width: 600px) {
             .hero h1 { font-size: 1.9rem; }
             .products-grid { grid-template-columns: 1fr; }
+            header { flex-direction: column; gap: 10px; text-align: center; }
         }
     </style>
 </head>
@@ -237,10 +270,9 @@
         <header>
             <div class="logo">SIGMA<span>.TWEAK</span></div>
             <div class="nav-links">
-                <a href="https://www.youtube.com/@urbexy_sigma" target="_blank" style="color: var(--text-muted); text-decoration: none; font-weight: 
-            <a href="https://www.youtube.com/@urbexy_sigma" target="_blank" style="color: var(--text-muted); text-decoration: none; font-weight: 
-
-                    </div>
+                <a href="https://www.youtube.com/@urbexy_sigma" target="_blank" class="nav-link">KANAŁ YT</a>
+                <a href="https://tipply.pl/@urbexy_sigma" target="_blank" class="nav-link tipply">WSPARCIE (TIPPLY)</a>
+            </div>
         </header>
 
         <section class="hero">
@@ -306,7 +338,7 @@
                 `echo ==========================================\n` +
                 `echo       SIGMA TWEAKER FREE - WERSJA DEMO     \n` +
                 `echo ==========================================\n` +
-                `echo Czyszczenie pamieci podręcznej DNS...\n` +
+                `echo Czyszczenie pamieci podrecznej DNS...\n` +
                 `ipconfig /flushdns\n` +
                 `echo.\n` +
                 `echo Czyszczenie podstawowych plikow tymczasowych...\n` +
@@ -368,7 +400,7 @@
                 `echo [OK] Przepustowosc sieci zoptymalizowana pod gry.\n` +
                 `echo.\n` +
                 `echo [4/4] Czyszczenie i zwalnianie pamieci RAM...\n` +
-                `echo [OK] Pamięć podreczna oczyszczona.\n` +
+                `echo [OK] Pamiec podreczna oczyszczona.\n` +
                 `echo.\n` +
                 `echo ==========================================\n` +
                 `echo SYSTEM ZOPTYMALIZOWANY! SPROBUJ URUCHOMIX GRE.\n` +
