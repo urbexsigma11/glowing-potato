@@ -73,7 +73,7 @@
             margin: 0 auto;
         }
 
-        /* --- SIATKA OFERT (DRUZGOCĄCA PRZEWAGA PRO) --- */
+        /* --- SIATKA OFERT --- */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -148,7 +148,7 @@
             color: var(--text-muted);
         }
 
-        /* --- POTĘŻNE PRZYCISKI DZIAŁANIA --- */
+        /* --- PRZYCISKI --- */
         .btn {
             display: block;
             text-align: center;
@@ -183,7 +183,7 @@
             box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
         }
 
-        /* --- PANEL INSTRUKCJI I ZABEZPIECZENIA PŁATNOŚCI --- */
+        /* --- PANEL INFO I GENERATOR TOKENÓW --- */
         .license-box {
             margin-top: 35px;
             background-color: #141419;
@@ -270,7 +270,7 @@
                 <ul class="features-list">
                     <li>Głębokie oczyszczanie cache, logów i Prefetch</li>
                     <li>Zaawansowany Low-Ping Tweak (TCP & Winsock)</li>
-                    <li>Oprożnianie zablokowanej pamięci podręcznej RAM</li>
+                    <li>Opróżnianie zablokowanej pamięci podręcznej RAM</li>
                     <li>Czysty kod PRO bez znaków wodnych i reklam</li>
                     <li>Darmowe aktualizacje i pełna moc sprzętu</li>
                 </ul>
@@ -287,7 +287,7 @@
             
             <div class="manual-pay-info">
                 <strong>Otwieranie płatności PayPal...</strong><br>
-                Jeśli okno się nie otworzyło, wyślij 15 PLN bezpośrednio na adres: <span style="color: #ffffff; font-weight: bold;">urbex0sigma@gmail.com</span>, a w tytule wiadomości wpisz wygenerowany powyżej kod PRO!
+                Jeśli okno się nie otworzyło, wyślij 15 PLN bezpośrednio przez PayPal na konto użytkownika: <span style="color: #ffffff; font-weight: bold;">@WojtekSawicki</span> (lub mail: urbex0sigma@gmail.com), a w tytule wpisz wygenerowany powyżej kod PRO!
             </div>
         </div>
 
@@ -298,7 +298,7 @@
 
     <script>
         function initiatePurchase() {
-            // 1. Generowanie błyskawicznego, unikalnego kodu dla klienta
+            // 1. Generowanie unikalnego kodu zamówienia
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let part1 = '', part2 = '';
             for (let i = 0; i < 4; i++) {
@@ -307,14 +307,14 @@
             }
             const generatedKey = `SIGMA-${part1}-${part2}-PRO`;
 
-            // 2. Odsłonięcie sekcji informacyjnej
+            // 2. Wyświetlenie informacji na stronie
             document.getElementById('keyDisplay').innerText = generatedKey;
             document.getElementById('licenseBox').style.display = 'block';
             document.getElementById('licenseBox').scrollIntoView({ behavior: 'smooth' });
 
-            // 3. Natychmiastowe otwarcie płatności na profil prywatny (nieblokowane przez przeglądarki mobilne)
+            // 3. Przekierowanie na Twój prywatny profil PayPal z kwotą 15 PLN
             setTimeout(function() {
-                window.open("https://www.paypal.com/paypalme/urbex0sigma/15PLN", "_blank");
+                window.open("https://www.paypal.com/paypalme/WojtekSawicki/15PLN", "_blank");
             }, 1500);
         }
     </script>
