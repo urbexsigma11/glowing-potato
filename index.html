@@ -178,7 +178,7 @@
 
             <div class="card premium">
                 <h3>Sigma Tweaker PRO</h3>
-                <div class="price">15 PLN</div>
+                <div class="price">1.11 PLN</div>
                 <ul class="features-list">
                     <li>Głębokie oczyszczanie cache i Prefetch</li>
                     <li>Zaawansowany Low-Ping Tweak (TCP)</li>
@@ -193,10 +193,10 @@
             <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Zapisz swój unikalny kod i użyj go w tytule wpłaty:</p>
             <div id="keyDisplay" class="license-key">SIGMA-XXXX-XXXX-PRO</div>
             
-            <p style="font-size: 0.9rem; margin-top: 15px;"> Aby otrzymać program, dokonaj płatności <strong>15 PLN</strong>.</p>
+            <p style="font-size: 0.9rem; margin-top: 15px;"> Aby otrzymać program, dokonaj płatności <strong>1.11 PLN</strong>.</p>
             
             <div class="action-box">
-                <a href="https://www.paypal.com/paypalme/WojtekSawicki/15PLN" target="_blank" class="btn btn-primary">1. Przejdź do płatności (PayPal)</a>
+                <a href="https://www.paypal.com/paypalme/WojtekSawicki/1.11PLN" target="_blank" class="btn btn-primary">1. Przejdź do płatności (PayPal)</a>
                 <button class="btn btn-success" onclick="downloadPro()">2. Pobierz aplikację PRO (.bat)</button>
             </div>
         </div>
@@ -218,7 +218,6 @@
             document.body.removeChild(anchor);
         }
 
-        // Funkcja jedynie pokazuje panel informacyjny i generuje token, nic więcej się nie dzieje samo
         function generateOrder() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let part1 = '', part2 = '';
@@ -233,7 +232,6 @@
             document.getElementById('licenseBox').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Funkcja pobierania pliku PRO wywoływana wyłącznie ręcznym kliknięciem drugiego przycisku
         function downloadPro() {
             const currentToken = document.getElementById('keyDisplay').innerText;
             const batchContentPro = `@echo off\ntitle Sigma Tweaker PRO\necho Token: ${currentToken}\ndel /s /f /q %systemroot%\\Prefetch\\*.* 2>nul\nipconfig /flushdns >nul\npause\n`;
